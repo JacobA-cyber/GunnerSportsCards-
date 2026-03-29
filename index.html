@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gunner Sportscards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    // Initialize Stripe with your publishable key
+    // Replace 'pk_test_your_publishable_key_here' with your actual Stripe publishable key
+    const stripe = Stripe(pk_test_51S2Gb3Fpso9SajTw8DL5PUZA7v8eoCEiHQ8j4LoCcobTs6tmicCW2Q9G41wBhadI6MD1TQqfRUaCf5KmWz1dmZFR005Hx0yExs);
+  </script> 
+</head>
+<body>
+<header>
+    <div class="logo">
+      <img src="https://files.catbox.moe/q7bc18.avif" alt="Gunner Logo"> 
+    </div>
+   <nav>
+  <ul>
+    
+  </ul>
+</nav>
+  </header>
+  
+  <section class="hero">
+    <h1>WELCOME TO GUNNER SPORTSCARDS</h1>
+    <p>Explore our growing collection of graded and collectible cards — new additions showcased regularly.</p>
+  </section>
+
+ 
+  <section class="carousel">
+  <div class="carousel-track">
+    <!-- Card 1 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/apb9mp.jpeg" alt="Card 1 front">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/a7sfij.jpeg" alt="Card 1 back">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/pu9x3d.jpeg" alt="Card 2 front">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/mcuysx.jpeg" alt="Card 2 back">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/a4i5lt.jpeg" alt="Card 3 front">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/gibtjy.jpeg" alt="Card 3 back">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/18cmv1.jpeg" alt="Card 4 front">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/mb56ob.jpeg" alt="Card 4 back">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/kxjgxq.jpeg" alt="Card 5 front">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/hamt8l.jpeg" alt="Card 5 back">
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate set for seamless scroll -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/apb9mp.jpeg" alt="Card 1 front duplicate">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/a7sfij.jpeg" alt="Card 1 back duplicate">
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/pu9x3d.jpeg" alt="Card 2 front duplicate">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/mcuysx.jpeg" alt="Card 2 back duplicate">
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/a4i5lt.jpeg" alt="Card 3 front duplicate">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/gibtjy.jpeg" alt="Card 3 back duplicate">
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/18cmv1.jpeg" alt="Card 4 front duplicate">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/mb56ob.jpeg" alt="Card 4 back duplicate">
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://files.catbox.moe/kxjgxq.jpeg" alt="Card 5 front duplicate">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://files.catbox.moe/hamt8l.jpeg" alt="Card 5 back duplicate">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="store">
+  <h2 class="store-title">
+  <a href="https://www.ebay.com/str/gunnersportcards?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=gsvdlfxxtne&sssrc=3418065&ssuid=gsvdlfxxtne&stype=1&widget_ver=artemis&media=SMS" target="_blank">
+    SHOP ON EBAY
+  </a>
+</h2>
+
+  <div class="store-grid">
+  <!-- Card 1 -->
+  <div class="store-item">
+    <div class="store-card">
+      <img src="https://files.catbox.moe/i25dhm.jpeg" alt="Card 1">
+      <div class="info">
+        <h3>Collection Card 1</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="store-item">
+    <div class="store-card">
+      <img src="https://files.catbox.moe/t2fuqa.jpeg" alt="Card 2">
+      <div class="info">
+        <h3>Collection Card 2</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="store-item">
+    <div class="store-card">
+      <img src="https://files.catbox.moe/hd06aa.jpeg" alt="Card 3">
+      <div class="info">
+        <h3>Collection Card 3</h3>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+  <section id="about" class="about-section">
+    <img src="https://files.catbox.moe/fpwty0.png" class="float-img img1">
+<img src="https://files.catbox.moe/s0kroa.png" class="float-img img2">
+<img src="https://files.catbox.moe/no5jdr.png" class="float-img img3">
+<img src="https://files.catbox.moe/n1p6tv.png" class="float-img img4">
+<img src="https://files.catbox.moe/8xwg72.png" class="float-img img5">
+<img src="https://files.catbox.moe/jcyx9a.png" class="float-img img6">
+<img src="https://files.catbox.moe/52j9so.png" class="float-img img7">
+<img src="https://files.catbox.moe/4ktquk.png" class="float-img img8">
+<img src="https://files.catbox.moe/9t6qpy.png" class="float-img img9">
+<img src="https://files.catbox.moe/fh7wjg.png" class="float-img img10">
+<img src="https://files.catbox.moe/234xlt.png" class="float-img img11">
+<img src="https://files.catbox.moe/zheszd.png" class="float-img img12">
+<img src="https://files.catbox.moe/ld8tvp.png" class="float-img img13">
+<img src="https://files.catbox.moe/az5vhh.png" class="float-img img14">
+<img src="https://files.catbox.moe/btm3iw.png" class="float-img img15">
+<img src="https://files.catbox.moe/2extb1.png" class="float-img img16">
+<img src="https://files.catbox.moe/4oz3bs.png" class="float-img img17">
+<img src="https://files.catbox.moe/zxb0iy.png" class="float-img img18">
+    <h2>About Us</h2>
+    <p>Welcome to Gunner Sports Cards! We are ecstatic to present to you an online shop that brings a modern approach to sports trading cards. As fellow-trading card collectors and investors ourselves, we created Gunner Sports Cards to make the hobby more exciting for those who are new to the hobby and also for the life-long collectors like us.</p>
+    <p>Here at GSC we take pride in being knowledgeable, trustworthy, and helpful to our customers. We are on a mission to being committed to evolving the card collecting experience and to create an everlasting hobby for you all.</p>
+    <p><strong>- Gunner Sports Cards</strong></p>
+  </section>
+<script>
+// Stripe Checkout integration
+async function checkout(productName, price) {
+  try {
+    // Show loading state
+    const button = event.target;
+    const originalText = button.textContent;
+    button.textContent = 'Processing...';
+    button.disabled = true;
+
+    const response = await fetch('/create-checkout-session', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        productName: productName,
+        price: price,
+      }),
+    });
+
+    const session = await response.json();
+
+    if (session.url) {
+      // Redirect to Stripe Checkout
+      window.location.href = session.url;
+    } else if (session.error) {
+      alert(`Checkout failed: ${session.error}`);
+    } else {
+      alert('Failed to initiate checkout. Please try again.');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('An error occurred during checkout. Please check your connection and try again.');
+  } finally {
+    // Reset button state
+    if (button) {
+      button.textContent = originalText;
+      button.disabled = false;
+    }
+  }
+}
+</script>
+</body>
+</html>
